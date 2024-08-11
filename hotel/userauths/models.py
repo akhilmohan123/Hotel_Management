@@ -12,7 +12,7 @@ GENDER=(("male","male"),("female","female"),("other","other"))
 IDENTITY_TYPE=(("National Identification Number","National Identification Number"),("Driving Licenece","Driving Licenece"),("passport","passport"))
 class User(AbstractUser):
     full_name=models.CharField(max_length=200,null=True,blank=True)
-    user_name=models.CharField(max_length=200,unique=True)
+    user_name=models.CharField(max_length=200)
     email=models.EmailField(unique=True)
     phone=models.CharField(max_length=100,null=True,blank=True)
     gender=models.CharField(max_length=20,choices=GENDER,default="other")

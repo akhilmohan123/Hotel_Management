@@ -6,6 +6,6 @@ class Useradmin(admin.ModelAdmin):
     list_display=['username','full_name','email','phone','gender']
 class Profileadmin(admin.ModelAdmin):
     search_fields=['full_name','user_username']
-    list_display=['full_name','verified','user']
+    list_display=['full_name','user','verified']
 admin.site.register(User,Useradmin)
 admin.site.register(Profile,Profileadmin)

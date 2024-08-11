@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    
+   
     'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -44,6 +46,7 @@ INSTALLED_APPS = [
     'addon',
     #third part
     'import_export',
+    'crispy_bootstrap4',
     'crispy_forms',
     'mathfilters',
     'ckeditor_uploader',
@@ -51,7 +54,7 @@ INSTALLED_APPS = [
     'taggit',
     
 ]
-
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
